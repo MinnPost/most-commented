@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Most Commented
-Plugin URI: http://dev.wp-plugins.org/browser/most-commented/
+Plugin URI: http://mtdewvirus.com/code/
 Description: Retrieves a list of the posts with the most comments.
-Version: 1.01
+Version: 1.02
 Author: Nick Momrik
 Author URI: http://mtdewvirus.com/
 */
 
-function get_most_commented($no_posts = 5, $before = '<li>', $after = '</li>', $show_pass_post = false) {
+function mdv_most_commented($no_posts = 5, $before = '<li>', $after = '</li>', $show_pass_post = false) {
     global $wpdb;
 	$request = "SELECT ID, post_title, COUNT($wpdb->comments.comment_post_ID) AS 'comment_count' FROM $wpdb->posts, $wpdb->comments";
 	$request .= " WHERE comment_approved = '1' AND $wpdb->posts.ID=$wpdb->comments.comment_post_ID AND post_status = 'publish'";

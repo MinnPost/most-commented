@@ -1,10 +1,10 @@
 Instructions:
 Place the function call in wherever you want the recent comments to appear.
-<?php get_most_commented(); ?>
+<?php mdv_most_commented(); ?>
 
 Configuration:
 You may pass parameters when calling the function to configure some of the options.
-Example: get_most_commented(10, '', '<br />', true)
+Example: mdv_most_commented(10, '', '<br />', true)
 
 The parameters:
 $no_posts - sets the number of posts to display
