@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Most Commented
-Plugin URI: http://mtdewvirus.com/code/
+Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/
 Description: Retrieves a list of the posts with the most comments.
 Version: 1.02
 Author: Nick Momrik
