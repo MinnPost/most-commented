@@ -1,4 +1,4 @@
-=== Most Commented ===Contributors: mtdewvirusTags: comments, popular, rankStable tag: trunkRetrieves a list of the posts with the most comments.== Installation ==1. Upload `most-commented.php` to the `/wp-content/plugins/` directory1. Activate the plugin through the 'Plugins' menu in WordPress1. Place `<?php mdv_most_commented(); ?>` in your templates. 
+=== Most Commented ===Contributors: MtDewVirusTags: comments, popular, rankStable tag: trunkRetrieves a list of the posts with the most comments.== Installation ==1. Upload `most-commented.php` to the `/wp-content/plugins/` directory1. Activate the plugin through the 'Plugins' menu in WordPress1. Place `<?php mdv_most_commented(); ?>` in your templates. 
 
 == Configuration ==
 You may pass parameters when calling the function to configure some of the options.
