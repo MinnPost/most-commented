@@ -1,6 +1,6 @@
 === Most Commented Widget ===
 Contributors: mtdewvirus
-Tags: comments, popular, rank
+Tags: comments, popular, rank, widget
 Stable tag: trunk
 Requires at least: 2.8
 Tested up to: 2.9
