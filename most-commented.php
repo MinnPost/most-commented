@@ -3,7 +3,7 @@
 Plugin Name: Most Commented Widget
 Plugin URI: http://wordpress.org/extend/plugins/most-commented/
 Description: Widget to display posts/pages with the most comments.
-Version: 2.1
+Version: 2.1.1
 Author: Nick Momrik
 Author URI: http://nickmomrik.com/
 */
@@ -65,10 +65,12 @@ class Most_Commented_Widget extends WP_Widget {
 					$output .= $before . 'None found' . $after;
 				}
 
-				if ( $title )
-					$output = $before_title . $title . $after_title . $output;
-				if ( !array_key_exists( 'not_widget', $instance ) )
-					$output = $before_widget . '<ul>' . $output . '</ul>' . $after_widget;
+				if ( !array_key_exists( 'not_widget', $instance ) ) {
+					if ( $title )
+						$title = $before_title . $title . $after_title;
+
+					$output = $before_widget . $title . '<ul>' . $output . '</ul>' . $after_widget;
+				}
 			} else {
 				$output = $posts;
 			}
