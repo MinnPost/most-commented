@@ -6,6 +6,7 @@ Description: Widget to display posts/pages with the most comments.
 Version: 3.0
 Author: Nick Momrik
 Author URI: http://nickmomrik.com/
+Updated by MinnPost to fix code standards/PHP 7 compatibility
 */
 
 class Most_Commented_Widget extends WP_Widget {
